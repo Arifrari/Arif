@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prank Page</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        background:linear-gradient(135deg,#000,#1a1a1a,#ff0000);
+        color:white;
+        overflow:hidden;
+        text-align:center;
+    }
+
+    .finger{
+        font-size:120px;
+        animation:bounce 1s infinite;
+    }
+
+    h1{
+        font-size:60px;
+        color:#ff3333;
+        text-shadow:0 0 20px red;
+        animation:shake 0.5s infinite;
+    }
+
+    p{
+        margin-top:15px;
+        font-size:24px;
+        color:#ddd;
+    }
+
+    .warning{
+        margin-top:20px;
+        color:yellow;
+        font-weight:bold;
+        animation:blink 1s infinite;
+    }
+
+    @keyframes bounce{
+        0%,100%{transform:translateY(0);}
+        50%{transform:translateY(-20px);}
+    }
+
+    @keyframes shake{
+        0%,100%{transform:translateX(0);}
+        25%{transform:translateX(-5px);}
+        75%{transform:translateX(5px);}
+    }
+
+    @keyframes blink{
+        50%{opacity:0;}
+    }
+
+    .bg-text{
+        position:absolute;
+        font-size:40px;
+        color:rgba(255,255,255,0.05);
+        animation:float 10s linear infinite;
+    }
+
+    @keyframes float{
+        from{
+            transform:translateY(100vh);
+        }
+        to{
+            transform:translateY(-100vh);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="finger">🖕</div>
+<h1>FUCK YOU</h1>
+<p>You have been officially pranked 😆</p>
+<div class="warning">⚠️ SYSTEM HACKED... JUST KIDDING! ⚠️</div>
+
+<div class="bg-text" style="left:10%;">LOL</div>
+<div class="bg-text" style="left:30%; animation-delay:2s;">PRANK</div>
+<div class="bg-text" style="left:50%; animation-delay:4s;">HAHA</div>
+<div class="bg-text" style="left:70%; animation-delay:6s;">GOTCHA</div>
+<div class="bg-text" style="left:90%; animation-delay:8s;">XD</div>
+
+</body>
+  </html>
